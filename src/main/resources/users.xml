@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vertex-ioUsers>
+    <vertex-ioUser>
+        <id>1</id>
+        <test>123</test>
+    </vertex-ioUser>
+    <vertex-ioUser>
+        <id>2</id>
+        <name>Tolia</name>
+    </vertex-ioUser>
+    <vertex-ioUser>
+        <id>3</id>
+        <name>Polia</name>
+    </vertex-ioUser>
+</vertex-ioUsers>

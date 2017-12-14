@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "test": "Kolia"
+    },
+//    comment
+    {
+      "id": 2,
+      "name": "Tolia"
+    },
+    {
+      "id": 3,
+      "name": "Polia"
+    }
+  ]
+}
