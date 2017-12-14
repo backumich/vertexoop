@@ -56,10 +56,10 @@ public class JsonUserReader implements UserReader {
     }
 
     public static void main(String[] args) {
-        Users users = getUsers();
-
         JsonUserReader reader = new JsonUserReader();
-        File jsonFile = new File("users.json");
+
+        File jsonFile = new File("./src/main/resources/users.json");
+        Users users = getUsers();
         reader.writeUsers(jsonFile, users);
 
         List<IoUser> usersFromJson = reader.readUsers(jsonFile);

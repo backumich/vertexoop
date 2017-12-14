@@ -10,29 +10,29 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name = "vertex-ioUsers")
+@XmlRootElement(name = "vertex-users")
 @XmlAccessorType(XmlAccessType.FIELD)
 @AllArgsConstructor
 @NoArgsConstructor
 public class Users {
 
     @XmlElement(name = "vertex-user")
-    private List<IoUser> ioUsers = new ArrayList<>();
+    private List<IoUser> users = new ArrayList<>();
 
     public void addUser(IoUser ioUser) {
-        ioUsers.add(ioUser);
+        users.add(ioUser);
     }
 
     public void addAllUsers(List<IoUser> ioUsers) {
-        this.ioUsers.addAll(ioUsers);
+        this.users.addAll(ioUsers);
     }
 
     public List<IoUser> getUsers() {
-        return ioUsers;
+        return users;
     }
 
     public void setUsers(List<IoUser> ioUsers) {
-        this.ioUsers = ioUsers;
+        this.users = ioUsers;
     }
 
 }

@@ -34,7 +34,7 @@ public class XmlReader implements UserReader {
             JAXBContext jaxbContext = JAXBContext.newInstance(Users.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             jaxbMarshaller.marshal(users, xmlFile);
         } catch (JAXBException e) {
@@ -46,9 +46,9 @@ public class XmlReader implements UserReader {
         Users users = getUsers();
 
         XmlReader xmlReader = new XmlReader();
-        File xmlFile = new File("users.xml");
-//        xmlFile.createNewFile();
-//        xmlReader.writeUsers(xmlFile, users);
+        File xmlFile = new File("./src/main/resources/users.xml");
+        xmlFile.createNewFile();
+        xmlReader.writeUsers(xmlFile, users);
 
         List<IoUser> usersFromXml = xmlReader.readUsers(xmlFile);
 
