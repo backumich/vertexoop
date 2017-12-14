@@ -60,7 +60,7 @@ public class JsonUserReader implements UserReader {
 
         JsonUserReader reader = new JsonUserReader();
         File jsonFile = new File("users.json");
-//        reader.writeUsers(jsonFile, users);
+        reader.writeUsers(jsonFile, users);
 
         List<IoUser> usersFromJson = reader.readUsers(jsonFile);
         System.out.println(usersFromJson);

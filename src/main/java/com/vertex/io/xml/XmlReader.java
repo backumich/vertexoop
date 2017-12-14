@@ -56,15 +56,9 @@ public class XmlReader implements UserReader {
     }
 
     public static Users getUsers() {
-        long id = 1L;
-        List<IoUser> ioUserList = new ArrayList<IoUser>();
-        ioUserList.addAll(Arrays.asList(
-                new IoUser(id++, "Kolia"),
-                new IoUser(id++, "Tolia"),
-                new IoUser(id, "Polia")));
-
-        Users users = new Users();
-        users.addAllUsers(ioUserList);
-        return users;
+        return new Users(Arrays.asList(
+                new IoUser(1L, "Kolia"),
+                new IoUser(2L, "Tolia"),
+                new IoUser(3L, "Polia")));
     }
 }
