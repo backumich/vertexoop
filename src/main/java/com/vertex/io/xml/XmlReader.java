@@ -34,7 +34,7 @@ public class XmlReader implements UserReader {
             JAXBContext jaxbContext = JAXBContext.newInstance(Users.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-//            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             jaxbMarshaller.marshal(users, xmlFile);
         } catch (JAXBException e) {

@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><vertex-users><vertex-user><id>1</id><name>Kolia</name></vertex-user><vertex-user><id>2</id><name>Tolia</name></vertex-user><vertex-user><id>3</id><name>Polia</name></vertex-user></vertex-users>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vertex-users>
+    <user>
+        <id>1</id>
+        <name>Kolia</name>
+    </user>
+    <user>
+        <id>2</id>
+        <name>Tolia</name>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Polia</name>
+    </user>
+</vertex-users>

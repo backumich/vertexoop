@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Users {
 
-    @XmlElement(name = "vertex-user")
+    @XmlElement(name = "user")
     private List<IoUser> users = new ArrayList<>();
 
     public void addUser(IoUser ioUser) {
